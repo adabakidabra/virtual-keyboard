@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    font-family: "Trebuchet MS", "Helvetica", sans-serif;
+}
+
+.title {
+    font-size: 30px;
+    color: rgba(101,134,177,0.8);
+    -webkit-text-stroke: 1px rgba(114,177,101,0.8);
+    -webkit-text-fill-color: rgba(101,134,177,0.8);
+}
+
+.description, .language, .title {
+    margin: 10px auto;
+    text-align: center;
+}
+
+textarea {
+    overflow: auto;
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(0, 46, 44);
+}
+
+.keyboard {
+    width: 710px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 0;
+    background: #013a1dec;
+    border: 3px solid #045850;
+    border-radius: 5px;
+    height: 240px;
+}
+
+.keyboard .row {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.keyboard .key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #60f5cb76;
+    background: #176652;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: border-radius 0.3s, background-color 0.3s;
+}
+
+div.key.Backspace {
+    width: 105px;
+}
+
+div.key.Tab {
+    width: 55px;
+}
+
+div.key.ShiftLeft,
+div.key.CapsLock {
+    width: 105px;
+}
+
+div.key.Enter,
+div.key.ShiftRight {
+    width: 86px;
+}
+
+div.key.Space {
+    width: 335px;
+}
+
+div.key.Del {
+    width: 45px;
+}
+
+.key.active {
+    background-color: #015835;
+    border-radius: 5px; 
+}
+
+.key.remove {
+    animation: key_animation 0.5s forwards;
+}
+
+@keyframes key_animation {
+    0% {
+        background-color: #015835;
+        border-radius: 5px;
+    }
+    100% {
+        background: #176652;
+        border-radius: 3px;
+    }
+}
